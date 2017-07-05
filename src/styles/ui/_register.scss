@@ -1,0 +1,46 @@
+.register-section {
+	text-align:left;
+	background: url(../imgs/register-bg.png) repeat right top;
+
+	.register-container {
+		width:50%;
+		background:#FFF;
+		min-height: 100vh;
+		min-width:rem(480);
+	
+		.register-belt {
+			padding-top: 20px;
+			max-width: rem(360);
+			margin:auto;
+
+			.register-already {
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) {
+	.register-section {
+		.register-container {
+			width:100%;
+			min-width: initial;
+			min-width: 30rem;
+		}
+	}
+}

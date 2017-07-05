@@ -1,0 +1,43 @@
+.home-section {
+	margin-top:rem(80);
+}
+
+.step-process {
+	margin: rem(30) 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+	.step-process__slide {
+		// flex: 1;
+		width: 33%;
+		padding:4%;
+
+		.step-process__image {
+			width:100%;
+		}
+	}
+} 
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) {
+	.home-section {
+		margin-top:rem(30);
+	}
+	.mobile-container {
+		margin:0 rem(10);
+	}
+	.step-process {
+		.step-process__slide {
+			width: 100%; 
+		}
+	}
+}
