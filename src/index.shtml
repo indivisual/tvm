@@ -10,13 +10,34 @@
   </head>
   <body>
 
-	<!-- //#include file="_styleguide/_buttons.html" -->
-
 	<div class="tvm-create-ad">
 		<div class="belt">
-			<!-- // #include file="_createAd/_home.html" -->
+			<!-- #include file="_createAd/_home.html" -->
 		</div>
 		<!-- #include file="_createAd/_register.html" -->
+
+		<form action="">
+
+			<!-- #include file="_createAd/_step1-type.html" -->
+
+			<!-- #include file="_createAd/_step0-makeAdd.html" -->
+			
+			<!-- #include file="_createAd/_step2-kind.html" -->
+
+			<!-- #include file="_createAd/_step3-more.html" -->
+			
+			<!-- #include file="_createAd/_step4-extras.html" -->
+			
+			<!-- #include file="_createAd/_step5-photos.html" -->
+			
+			<!-- #include file="_createAd/_step6-add-photo.html" -->
+			
+			<!-- #include file="_createAd/_step7-description.html" -->
+			
+			<!-- #include file="_createAd/_step8-condition.html" -->
+			
+
+		</form>
 	</div>
 	
 
