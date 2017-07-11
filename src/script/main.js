@@ -4,20 +4,8 @@ jQuery(document).ready(function($) {
 
 
 	function init() {
-		setBurguerMenu();
+		Tvm.Init();
 	} /* fin init */
-
-
-
-	/* Burguer menu */
-	function setBurguerMenu() {
-		$('#burguer-menu').on('click', function(e) {
-			e.preventDefault();
-			$('.main-menu').toggleClass('open-menu');
-		});
-	}
-
-
 
 	init();
 });
