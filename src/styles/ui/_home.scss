@@ -1,5 +1,6 @@
 .home-section {
 	margin-top:rem(80);
+	margin-bottom:rem(40);
 }
 
 .step-process {
@@ -22,15 +23,10 @@
 
 /* --------------- Media Queries ----------------- */
 
-@media only screen and (max-width: $screen-lg) { }
-
-@media only screen and (max-width: $screen-md) { }
-
-@media only screen and (max-width: $screen-sm) { }
-
 @media only screen and (max-width: $screen-xs) {
 	.home-section {
 		margin-top:rem(30);
+		margin-bottom:rem(0);
 	}
 	.mobile-container {
 		margin:0 rem(10);

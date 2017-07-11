@@ -12,4 +12,16 @@
 .tvm-create-ad {
 	@import 'ui/_home';
 	@import 'ui/_register';
+	@import 'ui/_progress-bar';
+	@import 'ui/_component-state';
+	@import 'ui/_component-ad';
+	@import 'ui/_step0-makeAdd';
+	@import 'ui/_step1-type';
+	@import 'ui/_step2-kind';
+	@import 'ui/_step3-more';
+	@import 'ui/_step4-extras';
+	@import 'ui/_step5-photos';
+	@import 'ui/_step6-add-photo';
+	@import 'ui/_step7-description';
+	@import 'ui/_step8-condition';
 }
