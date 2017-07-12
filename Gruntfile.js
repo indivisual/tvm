@@ -1,4 +1,4 @@
-// Generado el 2017-06-30
+// Generado el 2017-05-08
 // generator-f6html 1.0.15
 'use strict';
 
@@ -43,8 +43,8 @@ module.exports = function (grunt) {
         tasks: ['copy:stylesPre','sass:prueba', 'postcss:scss']
       },
       styles: {
-        files: ['<%= config.app %>/styles/**/*.css'],
-        tasks: ['copy:stylesPre', 'cssjoin:pre']
+        files: ['<%= config.app %>/styles/catalogue.css', '<%= config.app %>/styles/catalogue-email.css' ],
+        tasks: ['copy:catalogue']
       },
       html: {
       files: ['<%= config.app %>/**/*.html','<%= config.app %>/**/*.shtml'],
@@ -150,7 +150,7 @@ module.exports = function (grunt) {
       }
     },
 
-    
+
 
     // Compiles Sass to CSS and generates necessary files if requested
     sass: {
@@ -247,7 +247,7 @@ module.exports = function (grunt) {
           '<%= config.dist %>/script/{,*/}*.js',
           '<%= config.dist %>/styles/{,*/}*.css',
           '<%= config.dist %>/imgs/**/*.*',
-          '<%= config.dist %>/styles/base/fonts/{,*/}*.*',
+          '<%= config.dist %>/styles/generic/fonts/{,*/}*.*',
           '<%= config.dist %>/*.{ico,png}'
         ]
       }
@@ -256,7 +256,7 @@ module.exports = function (grunt) {
     // Reads HTML for usemin blocks to enable smart builds that automatically
     // concat, minify and revision files. Creates configurations in memory so
     // additional tasks can operate on them
-    useminPrepare: {     
+    useminPrepare: {
         options: {
           dest: '<%= config.dist %>'
         },
@@ -264,7 +264,7 @@ module.exports = function (grunt) {
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
-    usemin: {   
+    usemin: {
         options: {
           assetsDirs: [
             '<%= config.dist %>',
@@ -453,12 +453,24 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            'imgs/**/*.webp',
+            'imgs/**/*.*',
             '**/*.html',
             '**/*.json',
-            'styles/base/fonts/{,*/}*.*',
+            'styles/generic/fonts/{,*/}*.*',
             'styles/**/*.{jpg,png,gif}'
           ]
+        }]
+      },
+      vendor: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '.tmp/concat/styles/',
+          dest: '<%= config.dist %>/styles/',
+          src: [
+            'vendor.css'
+          ]
+
         }]
       },
       pre: {
@@ -486,7 +498,7 @@ module.exports = function (grunt) {
           src: [
             '**/*.shtml', '**/*.html'
           ]
-        
+
         }]
       },
       ssi: {
@@ -509,10 +521,17 @@ module.exports = function (grunt) {
         cwd: '<%= config.app %>/script',
         dest: '<%= config.pre %>/script/',
         src: '**/*.js'
+      },
+      catalogue: {
+        expand: true,
+        dot: true,
+        cwd: '<%= config.app %>/styles',
+        dest: '<%= config.pre %>/styles/',
+        src: ['catalogue.css', 'catalogue-email.css']
       }
     },
 
-    // Generates a custom Modernizr build that includes only the tests you
+     // Generates a custom Modernizr build that includes only the tests you
     // reference in your app
     modernizr: {
       dist: {
@@ -581,19 +600,18 @@ module.exports = function (grunt) {
       'clean:predashed', // Borra el footer y header de pre
       'wiredep:pre', // Mete los componentes de bower en los html en pre
       'useminPrepare',
-      
+
       'sass:prueba',
       'postcss:scss',
        // Completa el main.css de tmp los prefijos de los navegadores (-moz, etc)
       'concat', // Mete todos los js y css en un único archivo. Los nuestros en main. Los componentes en vendor.
-      
-      'cssmin:dist', // Minimiza el main.css de tmp y lo copia en dist.      
-      
-      'modernizr:pre',  // Copia el modernizr.js
+
+      'cssmin:dist', // Minimiza el main.css de tmp y lo copia en dist.
       'processhtml:pre', // Cambia la ruta del css en los html de pre.
       'usemin', // Sustituye los href de los html con las nuevas rutas.
+      'copy:catalogue',
       'browserSync:livereload', // Escucha los cambios
-      'watch' //Abre el navegador  
+      'watch' //Abre el navegador
     ]);
   });
 
@@ -615,20 +633,21 @@ module.exports = function (grunt) {
     'clean:predashed', // Borra el footer y header de pre
     'wiredep:pre', // Mete los componentes de bower en los html en pre
     'useminPrepare',
-    
+
     'sass:prueba',
     'postcss:scss',
      // Completa el main.css de tmp los prefijos de los navegadores (-moz, etc)
     'concat', // Mete todos los js y css en un único archivo. Los nuestros en main. Los componentes en vendor.
-    'cssmin', // Minimiza el main.css de tmp y lo copia en dist.
+    'cssmin:dist', // Minimiza el main.css de tmp y lo copia en dist.
     'uglify', // Minimiza los dos js concatenados y los copia en dist.
-    'copy:dist', // Copia los archivos de pre a dist. 
-    
+    'copy:dist', // Copia los archivos de pre a dist.
     'modernizr:dist',  // Copia el modernizr.js
+    'copy:vendor',
     'processhtml:pre', // Cambia la ruta del css en los html de pre
     //'filerev', // Sustituye los nombres de imágenes y archivos aleatoriamente y cambia los enlaces a ellos, para evitar cachés.
+    'copy:catalogue',
     'usemin', // Sustituye los href de los html con las nuevas rutas.
-    'htmlmin' // Comprime los htmls.    
+    'htmlmin' // Comprime los htmls.
   ]);
 
   grunt.registerTask('default', [

@@ -30,11 +30,11 @@
 			
 			<!-- #include file="_createAd/_step5-photos.html" -->
 			
-			<!-- #include file="_createAd/_step6-add-photo.html" -->
-			
 			<!-- #include file="_createAd/_step7-description.html" -->
 			
 			<!-- #include file="_createAd/_step8-condition.html" -->
+
+			<!-- #include file="_createAd/_step6-add-photo.html" -->
 			
 
 		</form>

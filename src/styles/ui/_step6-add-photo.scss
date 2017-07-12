@@ -13,6 +13,44 @@
 			width:100%;
 		}
 
+		.file-container {
+			position: relative;
+		
+			.image-result {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 0;
+				pointer-events: none;
+				opacity: 0;
+				border:1px dashed $hierro;
+				-webkit-transition: all 1.5s;
+				   -moz-transition: all 1.5s;
+				    -ms-transition: all 1.5s;
+				     -o-transition: all 1.5s;
+				        transition: all 1.5s;
+
+				.image-result_change {
+					position:absolute;
+					width:rem(57);
+					height:rem(57);
+					left:0;
+					bottom:0;
+					cursor: pointer;
+				}
+
+				.image-result_delete {
+					position:absolute;
+					width:rem(57);
+					height:rem(57);
+					right:0;
+					bottom:0;
+					cursor: pointer;
+				}
+			}
+		}
+
 		.eqWrap {
 			display: flex;
 			justify-content: space-between;

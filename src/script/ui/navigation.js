@@ -26,14 +26,18 @@ Tvm.Navigation = (function(){
 
 	/* Go to previous page */
 	_api.prev = function() {
+		_api.goto(Tvm.vars.page - 1);
+	}
+
+
+	/* Go to last seen page */
+	_api.back = function() {
 		_api.goto(_previousPage);
 	}
 
 
 	_api.goToSection = function( section ) {
-		console.log('section',section);
-		var _sectionNumber = $( '.' + section ).parent('section').attr('data-navigation');
-		console.log('_sectionNumber',_sectionNumber);
+		var _sectionNumber = parseInt($( '.' + section ).parent('section').attr('data-navigation'));
 		_api.goto(_sectionNumber);
 	}
 

@@ -23,12 +23,12 @@
               <p class="subtitle">¿De qué material es el cuadro?</p>
               <a href="#" class="info">INFO</a>
             </div>           
-            <ul class="choose choose-unique choose-mosaic" data-validate="false">
-              <li href="#" class="btn btn-multiple btn-shorter">Carbono</li>
-              <li href="#" class="btn btn-multiple btn-shorter">Aluminio</li>
-              <li href="#" class="btn btn-multiple btn-shorter">Titanio</li>
-              <li href="#" class="btn btn-multiple btn-shorter">Acero</li>
-              <li href="#" class="btn btn-multiple btn-shorter">Otro</li>
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="cuadro">
+              <li value="Carbono" class="btn btn-multiple btn-shorter">Carbono</li>
+              <li value="Aluminio" class="btn btn-multiple btn-shorter">Aluminio</li>
+              <li value="Titanio" class="btn btn-multiple btn-shorter">Titanio</li>
+              <li value="Acero" class="btn btn-multiple btn-shorter">Acero</li>
+              <li value="Otro" class="btn btn-multiple btn-shorter">Otro</li>
             </ul>
           </div>
 
@@ -38,10 +38,10 @@
               <p class="subtitle">¿Qué suspensión tiene?</p>
               <a href="#" class="info">INFO</a>
             </div>           
-            <ul class="choose choose-unique choose-mosaic" data-validate="false">
-              <li href="#" class="btn btn-multiple btn-shorter">Rigida</li>
-              <li href="#" class="btn btn-multiple btn-shorter">Doble</li>
-              <li href="#" class="btn btn-multiple btn-shorter">No lo sé</li>
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="suspension">
+              <li value="Rígida" class="btn btn-multiple btn-shorter">Rígida</li>
+              <li value="Doble" class="btn btn-multiple btn-shorter">Doble</li>
+              <li value="No lo sé" class="btn btn-multiple btn-shorter">No lo sé</li>
             </ul>
           </div>
 
@@ -51,13 +51,13 @@
               <p class="subtitle">¿Cuál es el recorrido de la suspensión delantera?</p>
               <a href="#" class="info">INFO</a>
             </div>           
-            <ul class="choose choose-unique choose-mosaic" data-validate="false">
-              <li href="#" class="btn btn-multiple btn-shorter">No tiene</li>
-              <li href="#" class="btn btn-multiple btn-shorter">80 - 100 mm</li>
-              <li href="#" class="btn btn-multiple btn-shorter">100 - 120 mm</li>
-              <li href="#" class="btn btn-multiple btn-shorter">120 - 140 mm</li>
-              <li href="#" class="btn btn-multiple btn-shorter">140 - 180 mm</li>
-              <li href="#" class="btn btn-multiple btn-shorter">No lo sé</li>
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="recorrido_susp_delantera">
+              <li value="No tiene" class="btn btn-multiple btn-shorter">No tiene</li>
+              <li value="80 - 100mm" class="btn btn-multiple btn-shorter">80 - 100 mm</li>
+              <li value="100 - 120mm" class="btn btn-multiple btn-shorter">100 - 120 mm</li>
+              <li value="120 - 140mm" class="btn btn-multiple btn-shorter">120 - 140 mm</li>
+              <li value="140 - 180mm" class="btn btn-multiple btn-shorter">140 - 180 mm</li>
+              <li value="No lo sé" class="btn btn-multiple btn-shorter">No lo sé</li>
             </ul>
           </div>
 
@@ -67,13 +67,13 @@
               <p class="subtitle">¿Cuál es el recorrido de la suspensión trasera?</p>
               <a href="#" class="info">INFO</a>
             </div>           
-            <ul class="choose choose-unique choose-mosaic" data-validate="false">
-              <li href="#" class="btn btn-multiple btn-shorter">No tiene</li>
-              <li href="#" class="btn btn-multiple btn-shorter">80 - 100 mm</li>
-              <li href="#" class="btn btn-multiple btn-shorter">100 - 120 mm</li>
-              <li href="#" class="btn btn-multiple btn-shorter">120 - 140 mm</li>
-              <li href="#" class="btn btn-multiple btn-shorter">140 - 180 mm</li>
-              <li href="#" class="btn btn-multiple btn-shorter">No lo sé</li>
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="recorrido_susp_trasera">
+              <li value="No tiene" class="btn btn-multiple btn-shorter">No tiene</li>
+              <li value="80 - 100mm" class="btn btn-multiple btn-shorter">80 - 100 mm</li>
+              <li value="100 - 120mm" class="btn btn-multiple btn-shorter">100 - 120 mm</li>
+              <li value="120 - 140mm" class="btn btn-multiple btn-shorter">120 - 140 mm</li>
+              <li value="140 - 180mm" class="btn btn-multiple btn-shorter">140 - 180 mm</li>
+              <li value="No lo sé" class="btn btn-multiple btn-shorter">No lo sé</li>
             </ul>
           </div>
 
@@ -86,7 +86,7 @@
             
             <div class="select-group">
              <p class="select-title">Modelo</p>
-             <select name="grupo_cambio" id="grupo_cambio" class="select">
+             <select name="grupo_cambio" id="grupo_cambio" class="select" data-save="grupo_cambio">
               <option value="eg">Selecciona uno</option>
              </select>
             </div>
@@ -98,12 +98,12 @@
               <p class="subtitle">¿Cuántas velocidades tiene?</p>
               <a href="#" class="info">INFO</a>
             </div>           
-            <ul class="choose choose-unique choose-mosaic" data-validate="false">
-              <li href="#" class="btn btn-multiple btn-shorter">12</li>
-              <li href="#" class="btn btn-multiple btn-shorter">11</li>
-              <li href="#" class="btn btn-multiple btn-shorter">10</li>
-              <li href="#" class="btn btn-multiple btn-shorter">3 - 9</li>
-              <li href="#" class="btn btn-multiple btn-shorter">Fixed</li>
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="velocidades">
+              <li value="12" class="btn btn-multiple btn-shorter">12</li>
+              <li value="11" class="btn btn-multiple btn-shorter">11</li>
+              <li value="10" class="btn btn-multiple btn-shorter">10</li>
+              <li value="3 - 9" class="btn btn-multiple btn-shorter">3 - 9</li>
+              <li value="Fixed" class="btn btn-multiple btn-shorter">Fixed</li>
             </ul>
           </div>
 
@@ -113,10 +113,10 @@
               <p class="subtitle">¿Cuántos platos tiene?</p>
               <a href="#" class="info">INFO</a>
             </div>           
-            <ul class="choose choose-unique choose-mosaic" data-validate="false">
-              <li href="#" class="btn btn-multiple btn-shorter">3</li>
-              <li href="#" class="btn btn-multiple btn-shorter">2</li>
-              <li href="#" class="btn btn-multiple btn-shorter">Monoplato</li>
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="platos">
+              <li value="3" class="btn btn-multiple btn-shorter">3</li>
+              <li value="2" class="btn btn-multiple btn-shorter">2</li>
+              <li value="Monoplato" class="btn btn-multiple btn-shorter">Monoplato</li>
             </ul>
           </div>
 
@@ -126,12 +126,12 @@
               <p class="subtitle">¿De qué medidas son las ruedas?</p>
               <a href="#" class="info">INFO</a>
             </div>           
-            <ul class="choose choose-unique choose-mosaic" data-validate="false">
-              <li href="#" class="btn btn-multiple btn-shorter">26"</li>
-              <li href="#" class="btn btn-multiple btn-shorter">27,5"</li>
-              <li href="#" class="btn btn-multiple btn-shorter">39"</li>
-              <li href="#" class="btn btn-multiple btn-shorter">Fatbike</li>
-              <li href="#" class="btn btn-multiple btn-shorter">Otra</li>
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="medidas_ruedas">
+              <li value="26" class="btn btn-multiple btn-shorter">26"</li>
+              <li value="27,5" class="btn btn-multiple btn-shorter">27,5"</li>
+              <li value="39" class="btn btn-multiple btn-shorter">39"</li>
+              <li value="Fatbike" class="btn btn-multiple btn-shorter">Fatbike</li>
+              <li value="Otra" class="btn btn-multiple btn-shorter">Otra</li>
             </ul>
           </div>
 

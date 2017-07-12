@@ -26,6 +26,7 @@ Tvm.Bicicle = (function(){
 		this.velocidades = characteristics.velocidades;
 		this.platos = characteristics.platos;
 		this.medida_ruedas = characteristics.medida_ruedas;
+		this.extra = characteristics.extra;
 		this.extras = characteristics.extras;
 		this.fotos = characteristics.fotos;
 		this.descripcion = characteristics.descripcion;
@@ -43,7 +44,7 @@ Tvm.Bicicle = (function(){
 
 
 
-	_api.sett = function( prop, value ) {
+	_api.setProp = function( prop, value ) {
 		_api.bicicle[prop] = value;
 		refresh(prop, value);
 	}
