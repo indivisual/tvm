@@ -8,6 +8,8 @@ Tvm.vars = {
 	'sections': 'section'
 }
 
+Tvm.bike = {};
+
 Tvm.Init = function(){
 
 	var _api = {};
