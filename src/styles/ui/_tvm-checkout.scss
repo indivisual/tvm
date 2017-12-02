@@ -1,0 +1,33 @@
+.tvm-checkout {
+	.belt {
+		max-width: rem(1200);
+		margin:auto;
+  }
+  
+  .checkout-steps {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 360px); 
+  }
+
+  .order-summary {
+    display: inline-block;
+    vertical-align: top;
+    width: rem(353);
+  }
+} 
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) { 
+	.tvm-checkout {
+		margin: 0;
+	}
+}

@@ -25,3 +25,8 @@
 	@import 'ui/_step7-description';
 	@import 'ui/_step8-condition';
 }
+
+@import 'ui/_tvm-checkout';
+.tvm-checkout {
+	@import 'ui/_order-summary';
+}

@@ -36,11 +36,9 @@
 
 		@if $size != 50% {
 			-webkit-border-radius: $size + px;
-			-moz-border-radius: $size + px;
 			border-radius: $size + px;
 		} @else {
 			-webkit-border-radius: $size;
-			-moz-border-radius: $size;
 			border-radius: $size;
 		}
 	}

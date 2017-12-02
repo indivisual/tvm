@@ -1,0 +1,22 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Tuvalum</title>
+    <meta name="description" content="">
+    
+    <!--#include file="_header.html" -->
+    
+  </head>
+  <body>
+
+	<div class="tvm-checkout">
+		<div class="belt">
+      <div class="checkout-steps">
+        <!-- #include file="_checkout/_checkout-step-1.html" -->
+      </div>
+			<!-- #include file="_checkout/_order-summary.html" -->
+		</div>
+	</div>
+	
+<!--#include file="_footer.html" -->
