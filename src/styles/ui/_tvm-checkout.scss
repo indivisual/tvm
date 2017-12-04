@@ -13,7 +13,8 @@
   .order-summary {
     display: inline-block;
     vertical-align: top;
-    width: rem(353);
+    width: 100%;
+    max-width: rem(353);
   }
 } 
 
