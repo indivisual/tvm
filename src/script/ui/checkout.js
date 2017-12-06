@@ -5,10 +5,9 @@ Tvm.Checkout = function(){
 	var _api = {};
 	var estado;
 
-
-
 	function init() {
     showDiscountCodeForm();
+    Tvm.Overlay.setOverlay($('.tvm-checkout'), 'overlay-checkout');
 	}
 
 	
