@@ -7,6 +7,7 @@
 @import 'layout/_buttons';
 @import 'layout/_forms';
 @import 'layout/_layout';
+@import 'layout/_overlay';
 
 @import 'ui/_tvm-create-ad';
 .tvm-create-ad {
@@ -24,4 +25,9 @@
 	@import 'ui/_step6-add-photo';
 	@import 'ui/_step7-description';
 	@import 'ui/_step8-condition';
+}
+
+@import 'ui/_tvm-checkout';
+.tvm-checkout {
+	@import 'ui/_order-summary';
 }
