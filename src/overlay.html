@@ -4,10 +4,18 @@
 <!-- html overlay -->
 <div id="overlay-checkout" class="overlay-wrapper">
 		<div class="overlay-content">
-			<div class="overlay-checkout">
+			<div class="overlay-checkout tabs">
 				<p class="overlay__title">Pasa al nivel superior con la puesta a punto Premium</p>
-				<div class="overlay__tables">
-					<div class="overlay__table">
+				<ul class="tabs__list">
+					<li class="tab btn btn-tab" data-js-target="0">
+						<a href="#">Básica</a>
+					</li>
+					<li class="tab btn btn-tab" data-js-target="1">
+						<a href="#">Premium</a>
+					</li>
+				</ul>
+				<div class="overlay__tables tabs__container">
+					<div class="overlay__table tab-content">
 						<div class="overlay-table__head">
 							<p class="overlay-table__row">Básica</p>
 						</div>
@@ -19,7 +27,7 @@
 							<p class="overlay-table__row">Incluida</p>
 						</div>
 					</div>
-					<div class="overlay__table">
+					<div class="overlay__table tab-content">
 							<div class="overlay-table__head">
 								<p class="overlay-table__row">Premium</p>
 							</div>
