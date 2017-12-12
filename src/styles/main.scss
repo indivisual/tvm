@@ -30,6 +30,7 @@
 
 @import 'ui/_tvm-checkout';
 .tvm-checkout {
+	@import 'ui/checkout/_nav';
 	@import 'ui/checkout/_order-summary';
 	@import 'ui/checkout/_foot';
 }

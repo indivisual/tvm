@@ -10,7 +10,12 @@
   }
 
   .checkout-body {
-    min-height: calc(100vh - 162px - 76px);
+    min-height: calc(100vh - 397px);
+    margin: rem(47) 0 0;
+    @media only screen and (max-width: $screen-xs) { 
+      margin: 0;
+      padding: 0 rem(10);
+    }
   }
   
   .checkout-steps {
