@@ -29,5 +29,6 @@
 
 @import 'ui/_tvm-checkout';
 .tvm-checkout {
-	@import 'ui/_order-summary';
+	@import 'ui/checkout/_order-summary';
+	@import 'ui/checkout/_foot';
 }

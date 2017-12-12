@@ -5,8 +5,12 @@
   }
 
 	.belt {
-		max-width: rem(1200);
-		margin:auto;
+    max-width: rem(1200);
+    margin: auto;
+  }
+
+  .checkout-body {
+    min-height: calc(100vh - 162px - 76px);
   }
   
   .checkout-steps {
