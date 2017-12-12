@@ -1,13 +1,16 @@
 var Tvm = Tvm || {};
+var isDesktop = $(window).width() > 767;
 
 Tvm.Checkout = function(){
 
 	var _api = {};
-	var estado;
 
 	function init() {
     showDiscountCodeForm();
     Tvm.Overlay.setOverlay($('.tvm-checkout'), 'overlay-checkout');
+    if (!isDesktop) {
+      Tvm.Tabs.setupTabs($('.overlay .tabs.overlay-checkout'), 1, 'a', 'click', true); 
+    }
 	}
 
 	
