@@ -11,6 +11,7 @@
   <body>
 
 	<div class="tvm-checkout">
+    <!--#include file="_checkout/_nav.html" -->
     <div class="checkout-body">
       <div class="belt">
         <div class="checkout-steps">
